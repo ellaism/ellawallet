@@ -165,7 +165,7 @@ var offlineTxCtrl = function($scope, $sce, walletService) {
             if (data.error) {
                 $scope.notifier.danger(data.msg);
             } else {
-                $scope.notifier.success(globalFuncs.successMsgs[2] + "<a href='http://explorer.ellaism.org/tx/" + data.data + "' target='_blank' rel='noopener'>" + data.data + "</a>");
+                $scope.notifier.success(globalFuncs.successMsgs[2] + "<a href='http://explorer.ellaism.io/transaction/" + data.data + "' target='_blank' rel='noopener'>" + data.data + "</a>");
             }
         });
     }

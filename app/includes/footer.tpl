@@ -30,9 +30,9 @@
     <section class="footer--cent">
         <section>
         <h5><i aria-hidden="true">💝</i> Donations are always appreciated!</h5>
-        <p>Check out Ellaism donation addresses <a href="http://ellaism.org/donations/" target="_blank">here</a>.</p>
+        <p>Check out Ellaism donation addresses <a href="http://ellaism.io/" target="_blank">here</a>.</p>
         <p>Dev Fund: <span class="mono wrap">
-          <a href="https://explorer.ellaism.org/addr/0xe9C2d958E6234c862b4AfBD75b2fd241E9556303" target="_blank">0xe9C2d958E6234c862b4AfBD75b2fd241E9556303</a>
+          <a href="https://explorer.ellaism.io/address/0xe9C2d958E6234c862b4AfBD75b2fd241E9556303" target="_blank">0xe9C2d958E6234c862b4AfBD75b2fd241E9556303</a>
         </span></p>
 	</section>
         <h5 ng-hide="curLang=='en'"> <i>🏅</i> <span translate="Translator_Desc"> Thank you to our translators </span></h5>
@@ -48,12 +48,8 @@
 
     <section class="footer--righ">
 
-      <p><a aria-label="website via my ether wallet dot com" href="http://ellaism.org" target="_blank" rel="noopener" role="link" tabindex="0">
-        ellaism.org
-      </a></p>
-
-      <p><a aria-label="website via my ether wallet dot com" href="https://ellaism.com" target="_blank" rel="noopener" role="link" tabindex="0">
-        ellaism.com
+      <p><a aria-label="website via my ether wallet dot com" href="http://ellaism.io" target="_blank" rel="noopener" role="link" tabindex="0">
+        ellaism.io
       </a></p>
 
       <p><a aria-label="website via my ether wallet dot com" href="https://ellaism.github.io/ellawallet/" target="_blank" rel="noopener" role="link" tabindex="0">

@@ -72,7 +72,7 @@ var quickSendCtrl = function($scope, $sce) {
 				if (!rawTx.isError) {
 					uiFuncs.sendTx(rawTx.signedTx, function(resp) {
 						if (!resp.isError) {
-							$scope.sendTxStatus = $sce.trustAsHtml(globalFuncs.getSuccessText(globalFuncs.successMsgs[2] + "<br />" + resp.data + "<br /><a href='http://explorer.ellaism.org/tx/" + resp.data + "' target='_blank' rel='noopener'> ETH TX via explorer.ellaism.org </a>"));
+							$scope.sendTxStatus = $sce.trustAsHtml(globalFuncs.getSuccessText(globalFuncs.successMsgs[2] + "<br />" + resp.data + "<br /><a href='http://explorer.ellaism.io/transaction/" + resp.data + "' target='_blank' rel='noopener'> ETH TX via explorer.ellaism.io </a>"));
 							$scope.setBalance();
 						} else {
 							$scope.sendTxStatus = $sce.trustAsHtml(globalFuncs.getDangerText(resp.error));
