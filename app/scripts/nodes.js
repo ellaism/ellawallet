@@ -5,7 +5,6 @@ nodes.infuraNode = require('./nodeHelpers/infura');
 nodes.metamaskNode = require('./nodeHelpers/metamask');
 nodes.nodeTypes = {
     ELLA: "ELLA",
-    ELLATESTNET: "TESTNET ELLA",
     ETH: "ETH",
     ETC: "ETC",
     MUS: "MUSIC",
@@ -33,27 +32,15 @@ nodes.customNodeObj = {
 nodes.nodeList = {
   'ella': {
     'name': 'ELLA',
-    'blockExplorerTX': 'https://explorer.ellaism.org/tx/[[txHash]]',
-    'blockExplorerAddr': 'https://explorer.ellaism.org/addr/[[address]]',
+    'blockExplorerTX': 'https://explorer.ellaism.io/transaction/[[txHash]]',
+    'blockExplorerAddr': 'https://explorer.ellaism.io/address/[[address]]',
     'type': nodes.nodeTypes.ELLA,
     'eip155': true,
     'chainId': 64,
     'tokenList': require('./tokens/ellaTokens.json'),
     'abiList': require('./abiDefinitions/ellaAbi.json'),
-    'service': 'ellaism.org',
-    'lib': new nodes.customNode('https://jsonrpc.ellaism.org', '')
-  },
-  'ella-testnet': {
-    'name': 'ELLA Testnet',
-    'blockExplorerTX': 'https://explorer.testnet.ellaism.org/tx/[[txHash]]',
-    'blockExplorerAddr': 'https://explorer.testnet.ellaism.org/addr/[[address]]',
-    'type': nodes.nodeTypes.ELLATESTNET,
-    'eip155': true,
-    'chainId': 6464,
-    'tokenList': require('./tokens/ellaTestnetTokens.json'),
-    'abiList': require('./abiDefinitions/ellaTestnetAbi.json'),
-    'service': 'testnet.ellaism.org',
-    'lib': new nodes.customNode('https://jsonrpc.testnet.ellaism.org', '')
+    'service': 'ellaism.io',
+    'lib': new nodes.customNode('https://jsonrpc.ellaism.io', '')
   }
 };
 

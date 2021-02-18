@@ -32,7 +32,7 @@
 
     <div class="cont-md" ng-show="txInfo.status == txStatus.mined">
       <h3 class="text-success" translate="tx_FoundOnChain"> Transaction Found </h3>
-      <h5> <a href="https://explorer.ellaism.org/tx/{{ tx.hash }}" target="_blank" rel="noopener"> {{ tx.hash }} </a> </h5>
+      <h5> <a href="https://explorer.ellaism.io/transaction/{{ tx.hash }}" target="_blank" rel="noopener"> {{ tx.hash }} </a> </h5>
       <p><strong translate="tx_FoundOnChain_1"></strong></p>
       <ul>
         <li translate="tx_FoundOnChain_2"></li>
@@ -66,15 +66,15 @@
       <tbody>
         <tr>
           <td translate="x_TxHash">TX Hash</td>
-          <td><a href="https://explorer.ellaism.org/tx/{{ txInfo.hash }}" target="_blank" rel="noopener"> {{ txInfo.hash }} </a></td>
+          <td><a href="https://explorer.ellaism.io/transaction/{{ txInfo.hash }}" target="_blank" rel="noopener"> {{ txInfo.hash }} </a></td>
         </tr>
         <tr>
           <td translate="OFFLINE_Step1_Label_1">From Address</td>
-          <td><a href="https://explorer.ellaism.org/addr/{{ txInfo.from }}" target="_blank" rel="noopener"> {{ txInfo.from }} </a></td>
+          <td><a href="https://explorer.ellaism.io/address/{{ txInfo.from }}" target="_blank" rel="noopener"> {{ txInfo.from }} </a></td>
         </tr>
         <tr>
           <td translate="OFFLINE_Step2_Label_1">To Address</td>
-          <td><a href="https://explorer.ellaism.org/addr/{{ txInfo.to }}" target="_blank" rel="noopener"> {{ txInfo.to }} </a></td>
+          <td><a href="https://explorer.ellaism.io/address/{{ txInfo.to }}" target="_blank" rel="noopener"> {{ txInfo.to }} </a></td>
         </tr>
         <tr>
           <td translate="SEND_amount_short">Amount</td>
